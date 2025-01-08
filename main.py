@@ -24,7 +24,7 @@ if page == "기본 앱":
 
     with col1:
         st.image(
-            "https://via.placeholder.com/500x300", 
+            "https://www.google.com/url?sa=i&url=https%3A%2F%2Fnamu.wiki%2Fw%2F%25EB%25B6%2584%25EB%258B%25B9%25EB%258C%2580%25EC%25A7%2584%25EA%25B3%25A0%25EB%2593%25B1%25ED%2595%2599%25EA%25B5%2590&psig=AOvVaw1Z6ofmjL1CkBZs6qUwZrnc&ust=1736391820530000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKC3zdKR5YoDFQAAAAAdAAAAABAE", 
             caption="멋진 이미지를 추가하세요!", 
             use_column_width=True
         )
@@ -44,10 +44,8 @@ if page == "기본 앱":
 
     # 사용자 입력
     st.sidebar.header("설정 패널")
-    name = st.sidebar.text_input("이름을 입력하세요:", "홍길동")
-    age = st.sidebar.slider("나이를 선택하세요:", 10, 100, 25)
-
-    st.write(f"👋 안녕하세요, {name}님! 당신의 나이는 {age}세입니다.")
+    name = st.sidebar.text_input("이름을 입력하세요:", "양서진")
+    age = s저의 나이는 {age}세입니다.")
 
     # 데이터 입력 및 시각화 예시
     st.write("### 간단한 데이터 프레임")
@@ -90,9 +88,7 @@ elif page == "퀴즈 풀기":
         },
     ]
 
-    #
-python
-코드 복사
+
     # 퀴즈 실행
     for i, quiz in enumerate(quizzes):
         st.write(f"### 문제 {i+1}: {quiz['question']}")
