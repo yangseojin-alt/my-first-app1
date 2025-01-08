@@ -16,7 +16,7 @@ col1, col2 = st.columns(2)
 
 with col1:
     st.image(
-        "https://via.placeholder.com/500x300", 
+        "https://www.google.com/url?sa=i&url=https%3A%2F%2Flifesci.korea.ac.kr%2F&psig=AOvVaw1BAm7xgBltRaHvsKGKCTZP&ust=1736389906464000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKjilMKK5YoDFQAAAAAdAAAAABAE", 
         caption="멋진 이미지를 추가하세요!", 
         use_column_width=True
     )
