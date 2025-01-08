@@ -52,7 +52,7 @@ if page == "기본 앱":
     # 데이터 입력 및 시각화 예시
     st.write("### 간단한 데이터 프레임")
     data = pd.DataFrame(
-        np.random.randn(10, 3),
+        np.random.randn(100, 3),
         columns=["A", "B", "C"]
     )
     st.table(data)
