@@ -36,8 +36,8 @@ with col2:
 
 # 사용자 입력
 st.sidebar.header("설정 패널")
-name = st.sidebar.text_input("이름을 입력하세요:", "홍길동")
-age = st.sidebar.slider("나이를 선택하세요:", 10, 100, 25)
+name = st.sidebar.text_input("이름을 입력하세요:")
+age = st.sidebar.slider("나이를 선택하세요:")
 
 st.write(f"👋 안녕하세요, {name}님! 당신의 나이는 {age}세입니다.")
 
