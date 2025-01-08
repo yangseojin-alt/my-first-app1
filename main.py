@@ -65,6 +65,7 @@ st.set_page_config(
     page_icon="❓",
     layout="centered",
 )
+import streamlit as st
 
 # 헤더
 st.title("🧠 재미있는 퀴즈 풀기!")
