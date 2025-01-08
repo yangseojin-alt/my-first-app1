@@ -47,7 +47,7 @@ import numpy as np
 
 st.write("### 간단한 데이터 프레임")
 data = pd.DataFrame(
-    np.random.randn(1.10000),
+    np.random.randn(1000,3),
     columns=["A", "B", "C"]
 )
 st.table(data)
