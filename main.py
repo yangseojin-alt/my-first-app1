@@ -16,7 +16,7 @@ col1, col2 = st.columns(2)
 
 with col1:
     st.image(
-        "https://www.google.com/url?sa=i&url=https%3A%2F%2Flifesci.korea.ac.kr%2F&psig=AOvVaw1BAm7xgBltRaHvsKGKCTZP&ust=1736389906464000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKjilMKK5YoDFQAAAAAdAAAAABAE", 
+        ""C:\Users\user\Downloads\dlalwl.webp"", 
         caption="멋진 이미지를 추가하세요!", 
         use_column_width=True
     )
@@ -39,7 +39,7 @@ st.sidebar.header("설정 패널")
 name = st.sidebar.text_input("이름을 입력하세요:","양서진")
 age = st.sidebar.slider("나이를 선택하세요:",18)
 
-st.write(f"👋 안녕하세요, {name}님! 당신의 나이는 {age}세입니다.")
+st.write(f"👋 안녕하세요, 저는 {name}이고요. {age}세입니다.")
 
 # 데이터 입력 및 시각화 예시
 import pandas as pd
@@ -47,7 +47,7 @@ import numpy as np
 
 st.write("### 간단한 데이터 프레임")
 data = pd.DataFrame(
-    np.random.randn(10, 3),
+    np.random.randn(1,10000),
     columns=["A", "B", "C"]
 )
 st.table(data)
@@ -60,6 +60,3 @@ st.line_chart(data)
 if st.button("환영 메시지 표시"):
     st.success("🎉 Streamlit 앱에 오신 것을 환영합니다!")
 
-# 푸터
-st.write("---")
-st.write("🔗 더 알아보기: [Streamlit 공식 문서](https://docs.streamlit.io/)")
