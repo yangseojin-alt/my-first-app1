@@ -38,8 +38,7 @@ with col2:
 st.sidebar.header("설정 패널")
 name = st.sidebar.text_input("이름을 입력하세요:","양서진")
 age = st.sidebar.slider("나이를 선택하세요:",18)
-산",
-}
+
 
 st.set_page_config(
     page_title="퀴즈 앱",
