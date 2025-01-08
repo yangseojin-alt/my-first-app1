@@ -36,9 +36,29 @@ with col2:
 
 # 사용자 입력
 st.sidebar.header("설정 패널")
-name = st.sidebar.text_input("이름을 입력하세요:","양서진")
-age = st.sidebar.slider("나이를 선택하세요:",18)
+name = st.sidebar.text_input("이름을 입력하세요:", "양서진")
+age = st.sidebar.slider("나이를 선택하세요:", 18)
 
+st.write(f"👋 안녕하세요, {name}입니다! 저의 나이는 {age}세입니다.")
+
+# 데이터 입력 및 시각화 예시
+import pandas as pd
+import numpy as np
+
+st.write("### 간단한 데이터 프레임")
+data = pd.DataFrame(
+    np.random.randn(100, 3),
+    columns=["A", "B", "C"]
+)
+st.table(data)
+
+# 플롯 예제
+st.write("### 데이터 플롯")
+st.line_chart(data)
+
+# 버튼과 액션
+if st.button("환영 메시지 표시"):
+    st.success("🎉 Streamlit 앱에 오신 것을 환영합니다!")
 
 st.set_page_config(
     page_title="퀴즈 앱",
