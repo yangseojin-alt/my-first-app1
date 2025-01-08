@@ -60,14 +60,6 @@ st.line_chart(data)
 if st.button("환영 메시지 표시"):
     st.success("🎉 Streamlit 앱에 오신 것을 환영합니다!")
 
-import streamlit as st
-
-# 페이지 설정
-st.set_page_config(
-    page_title="퀴즈 앱",
-    page_icon="❓",
-    layout="centered",
-)
 
 # 헤더
 st.title("🧠 재미있는 퀴즈 풀기!")
