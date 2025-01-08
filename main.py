@@ -16,7 +16,7 @@ col1, col2 = st.columns(2)
 
 with col1:
     st.image(
-        ""C:\Users\user\Downloads\dlalwl.webp"", 
+        "https://i.namu.wiki/i/URqcrFqj4QZ9nSgO4XuzZsttV5S5PhXRL6ivu4ilUTc0u75Qm7wvfyHGfUBj-b3QrKxsGE8qlJ7GKpte7gCmhQ.webp", 
         caption="멋진 이미지를 추가하세요!", 
         use_column_width=True
     )
